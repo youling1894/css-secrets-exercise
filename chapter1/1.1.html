@@ -1,0 +1,32 @@
+<style>
+
+    body {
+        background: url('http://csssecrets.io/images/stone-art.jpg');
+    }
+
+    div {
+        border: 10px solid hsla(0,0%,100%,.5);
+        background: white;
+        background-clip: padding-box;
+        
+        /* styling */
+        min-height: 100px;
+        width: 100px;
+        padding: 2em;
+        margin: 2em auto 0;
+        font: 100%/1.5 sans-serif;
+    }
+</style>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script>
+     window.onload=function(){
+        var s1Height = $("#test").height();
+        console.log(s1Height);
+    }
+</script>
+
+
+<div id="test">
+    Can I haz semi-transparent borders?
+    Pretty please?
+</div>

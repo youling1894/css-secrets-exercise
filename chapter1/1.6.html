@@ -1,0 +1,43 @@
+<style>
+
+
+    div {
+       
+        border-radius: 20px;
+        min-height: 100px;
+        width: 100px;
+        padding: 2em;
+        margin: 2em auto 0;
+        font: 100%/1.5 sans-serif;
+    }
+
+    .bg-image-test{
+        background-image: 
+            repeating-linear-gradient(transparent,transparent 21px,blue 0,blue 22px),
+            repeating-linear-gradient(90deg,transparent,transparent 21px,blue 0,blue 22px),
+            repeating-linear-gradient(transparent,transparent 63px,red 0,red 64px),
+            repeating-linear-gradient(90deg,transparent,transparent 63px,red 0,red 64px);
+    }
+
+    .radial-test{
+        background-color: aqua;
+        background-image: radial-gradient(blue,blue 5px,transparent 0),
+                          radial-gradient(blue,blue 5px,transparent 0),
+                          radial-gradient(red,red 5px,transparent 0);
+        background-size: 30px 30px;
+        background-position: 0 0, 15px 15px,20px 20px;
+    }
+</style>
+
+<div class="bg-image-test">
+    Can I haz semi-transparent borders?
+    Pretty please?
+</div>
+
+<div class="radial-test">
+    Can I haz semi-transparent borders?
+    Pretty please?
+</div>
+
+
+

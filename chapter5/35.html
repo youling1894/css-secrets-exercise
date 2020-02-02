@@ -1,0 +1,37 @@
+<style>
+    .img-slider {
+        position: relative;
+        display: inline-block;
+    }
+    .img-slider > div{
+        position: absolute;
+        top: 0;bottom: 0;left: 0;
+        width: 50%;
+        overflow: hidden;
+        resize: horizontal;
+        max-width: 100%;
+    }
+    .img-slider > div::before{
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-image: linear-gradient(-45deg,white 50%,transparent 0);
+        bottom: 0;right: 0;
+        cursor: ew-resize;
+        padding: 5px;
+        background-clip:content-box;
+    }
+    .img-slider img{
+        display: block;
+    }
+
+</style>
+
+<div class="img-slider">
+    <div>
+        <img src="../img/adamcatlace-before.jpg" alt="">
+    </div>
+    <img src="../img/adamcatlace-after.jpg" alt="">
+
+</div>

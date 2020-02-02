@@ -1,0 +1,43 @@
+<style>
+    div {
+        width: 800px;
+        height: 800px;
+        padding: 20px;
+        margin: 2em auto 0;
+        font: 100%/1.5 sans-serif;
+	    box-sizing: border-box;
+        z-index: 1;
+
+
+    }
+    h3{
+        position: relative;
+        width: 300px;
+        height: 300px;
+        background: hsla(0, 0%, 100%, .3);
+        z-index: 3;
+
+        
+    }
+    div,h3::before{
+        background: url("../img/adamcatlace.jpg") 0 / contain fixed;
+    }
+    h3::before{
+
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: -1;
+        -webkit-filter: blur(20px);
+        filter: blur(20px);
+    }
+
+
+</style>
+
+<div>
+    <h3>
+        Can I haz semi-transparent borders?
+    </h3>
+    
+</div>

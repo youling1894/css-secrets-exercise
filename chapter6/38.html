@@ -1,0 +1,49 @@
+<style>
+    span{
+        margin-right: 5px;
+    }
+    span:first-child:nth-last-child(5),
+    span:first-child:nth-last-child(5)~span{
+        background-color: chartreuse;
+    }
+    em:nth-child(-n+4){
+        background-color: thistle;
+    }
+    b:first-child:nth-last-child(n+3)~b{
+        background-color: turquoise;
+    }
+    i:first-child:nth-last-child(n+2),:nth-last-child(n+5)~i{
+        background-color: brown;
+    }
+
+</style>
+<div>
+    <span>Span 1!</span>
+    <span>Span 2</span>
+    <span>Span 3!</span>
+    <span>Span 4</span>
+    <span>Span 5!</span>
+</div>
+<div>
+    <em>Span 1!</em>
+    <em>Span 2</em>
+    <em>Span 3!</em>
+    <em>Span 4</em>
+    <em>Span 5!</em>
+</div>
+<div>
+    <b>Span 1!</b>
+    <b>Span 2</b>
+    <b>Span 3!</b>
+    <b>Span 4</b>
+    <b>Span 5!</b>
+</div>
+
+<div>
+    <i>Span 1!</i>
+    <i>Span 2</i>
+    <i>Span 3!</i>
+    <i>Span 4</i>
+    <i>Span 5!</i>
+    <i>Span 6!</i>
+</div>

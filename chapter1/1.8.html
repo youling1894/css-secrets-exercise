@@ -1,0 +1,44 @@
+<style>
+    div {
+       
+        border-radius: 20px;
+        min-height: 100px;
+        width: 100px;
+        padding: 2em;
+        margin: 2em auto 0;
+        font: 100%/1.5 sans-serif;
+    }
+    .border-image-test{
+        border: 10px solid transparent;
+        border-image: 10 repeating-linear-gradient(45deg,red,red 10px,white 0,white 20px,
+        blue 0,blue 30px,white 0,white 40px );
+    }
+    .ants-test{
+        border: 10px solid transparent;
+        background: 
+            linear-gradient(white,white) padding-box,
+            repeating-linear-gradient(45deg,red,red 25%,white 0,white 50%);
+        background-size: 20px 20px;
+ 
+        animation: ants 12s linear infinite;
+
+    }
+
+    @keyframes ants{ to {
+        background-position: 100%;
+    }}
+
+</style>
+
+<div class="border-image-test">
+    Can I haz semi-transparent borders?
+    Pretty please?
+</div>
+
+<div class="ants-test">
+    Can I haz semi-transparent borders?
+    Pretty please?
+</div>
+
+
+
