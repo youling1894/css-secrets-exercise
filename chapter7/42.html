@@ -1,0 +1,32 @@
+<style>
+    div{
+        width: 100px;
+        height: 100px;
+        display: block;
+        border-radius: 50%;
+        animation: move 2s cubic-bezier(.1,.25,1,.25)  infinite;
+        background-color: darksalmon;
+        transform: translateY(0px);
+        
+    }
+
+    @keyframes move {
+        60%,80%,100%{
+            transform: translateY(400px);
+            transition-timing-function: cubic-bezier(.25,.1,.25,.1);
+        }
+        70%{
+            transform: translateY(360px);
+        }
+        90%{
+            transform: translateY(380px);
+        }
+    }
+</style>
+
+
+
+
+<div>
+
+</div>

@@ -1,0 +1,42 @@
+<style>
+    .call{
+        display: block;
+        background-color: darksalmon;
+        width: 100px;
+        
+        transition: .5s transform cubic-bezier(.25,.1,.3,1.5);
+        transform-origin: 1.4em -.4em;
+    }
+
+    input:not(:focus) + .call{
+        transform: scale(0);
+        transition:transform .25s;
+        /* transition-timing-function: ease;
+        transition-duration: .25s;
+        transition-property: transform; */
+    }
+
+    /* input:focus + .call{
+        animation: call .5s;
+    } */
+
+    /* @keyframes call {
+        from{
+            transform: scale(0);
+        }
+        70%{
+            transform: scale(1.1);
+            transition-timing-function: cubic-bezier(.1,.25,1,.25);
+        }
+    } */
+
+
+</style>
+
+<label>
+    Your username:
+    <input />
+    <span class="call">
+        call me ur name
+    </span>
+</label>

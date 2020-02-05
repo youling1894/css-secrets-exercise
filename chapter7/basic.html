@@ -1,0 +1,43 @@
+<style>
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        font-size: 40px;
+        color: #fff;
+    }
+    .transition-test{
+        background-color: cadetblue;
+        transition: width 2s,height 2s,background-color 2s;
+    }
+
+    .transition-test:hover{
+        width: 400px;
+        height: 400px;
+        background-color: darkgoldenrod;
+    }
+
+    .anime-test{
+        background-color: darkorchid;
+        animation: move 2s ease 0s infinite alternate;
+    }
+
+    @keyframes move{
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(300px);
+        }
+    }
+
+</style>
+<section class = "transition-test">
+    hello
+</section>
+
+<section class="anime-test">
+    bye bye
+</section>
